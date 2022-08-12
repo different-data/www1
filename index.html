@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>IncubateX</title>
+    <link rel="shortcut icon" type="image/x-icon" href="./assets/img/logo_simple.svg">
+    <link rel="stylesheet" type="text/css" href="./assets/css/normalize.css">
+    <link rel="stylesheet" type="text/css" href="./assets/css/style.css">
+</head>
+
+<body>
+    <svg style="display: none;">
+        <symbol id="prev" viewBox="0 0 14 28">
+            <g>
+                <path
+                    d="M11.6054 27.0183C12.0516 27.0197 12.4842 26.8648 12.8282 26.5806C13.0217 26.4205 13.1818 26.2238 13.2993 26.0017C13.4167 25.7797 13.4892 25.5366 13.5125 25.2865C13.5359 25.0364 13.5097 24.7842 13.4354 24.5442C13.3611 24.3043 13.2403 24.0813 13.0797 23.8882L4.53646 13.6417L12.7988 3.39648C12.9577 3.20133 13.0764 2.9767 13.1482 2.73552C13.22 2.49433 13.2434 2.24134 13.217 1.99108C13.1907 1.74082 13.1152 1.49823 12.9948 1.27725C12.8745 1.05627 12.7116 0.861258 12.5156 0.703426C12.3182 0.529334 12.087 0.397919 11.8364 0.31743C11.5858 0.236941 11.3213 0.209115 11.0595 0.235698C10.7976 0.26228 10.5441 0.342698 10.3148 0.471905C10.0855 0.601112 9.88543 0.776317 9.72706 0.986525L0.489304 12.4337C0.208007 12.7751 0.053938 13.2035 0.0534051 13.6459C0.0528722 14.0882 0.205909 14.517 0.486383 14.8591L10.0212 26.3289C10.2125 26.5603 10.4556 26.7432 10.7309 26.863C11.0061 26.9828 11.3058 27.036 11.6054 27.0183Z" />
+            </g>
+        </symbol>
+        <symbol id="next" viewBox="0 0 15 28">
+            <g>
+                <path
+                    d="M2.80024 27.0644C2.35403 27.0647 1.92178 26.9088 1.57855 26.6237C1.38536 26.4631 1.22575 26.266 1.10886 26.0437C0.991959 25.8214 0.920071 25.5782 0.897311 25.328C0.874551 25.0778 0.901366 24.8257 0.976219 24.5859C1.05107 24.3461 1.17249 24.1234 1.33353 23.9307L9.90141 13.7049L1.66377 3.43972C1.50537 3.24419 1.38718 3.01928 1.31599 2.77792C1.24479 2.53656 1.222 2.28351 1.24892 2.03332C1.27584 1.78312 1.35195 1.54071 1.47286 1.32003C1.59377 1.09934 1.7571 0.904721 1.95347 0.747362C2.15127 0.573746 2.38282 0.442889 2.63359 0.363003C2.88436 0.283118 3.14894 0.255929 3.41072 0.283143C3.6725 0.310357 3.92582 0.391385 4.1548 0.521144C4.38378 0.650903 4.58346 0.826589 4.74132 1.03718L13.9515 12.5066C14.2319 12.8487 14.385 13.2775 14.3844 13.7198C14.3839 14.1622 14.2298 14.5906 13.9485 14.932L4.38614 26.3788C4.19428 26.6097 3.9507 26.7921 3.67515 26.9112C3.39961 27.0303 3.09986 27.0828 2.80024 27.0644Z" />
+            </g>
+        </symbol>
+		  <symbol id="top__top" viewBox="0 0 24 24">
+			<g>
+			  <path d="M14.2209,8.5575 C14.2209,8.7485 14.1479,8.9405 14.0019,9.0865 L10.5319,12.5735 C10.3909,12.7145 10.1999,12.7935 9.9999,12.7935 C9.8009,12.7935 9.6099,12.7145 9.4689,12.5735 L5.9969,9.0865 C5.7049,8.7935 5.7049,8.3195 5.9989,8.0265 C6.2929,7.7345 6.7679,7.7355 7.0599,8.0285 L9.9999,10.9815 L12.9399,8.0285 C13.2319,7.7355 13.7059,7.7345 13.9999,8.0265 C14.1479,8.1725 14.2209,8.3655 14.2209,8.5575"></path>
+			</g>
+	  </symbol>
+    </svg>
+    <div class="overlay"></div>
+    <header class="header" id="IncubateX" style="background: #aeb0c4;">
+        <div class="container">
+            <div class="header__inner">
+                <a class="header__logo" href="#">Incubate<span class="logo__span">X</span></a>
+                <nav class="nav">
+                    <ul class="nav__list">
+                        <li class="nav__item"><a class="nav__link left" href="#home">Home</a></li>
+                        <li class="nav__item"><a class="nav__link" href="#products">Products</a></li>
+                        <li class="nav__item"><a class="nav__link" href="#pricing">Pricing</a></li>
+                        <li class="nav__item"><a class="nav__link" href="#docs">Docs</a></li>
+                        <li class="nav__item"><a class="nav__link" href="#contact">Contact&nbsp;us</a></li>
+                    </ul>
+                </nav>
+                <button class="burger" type="button" aria-label="Открыть меню">
+                        <span class="burger__item"></span>
+                    </button>
+            </div>
+        </div>
+    </header>
+    <div class="wrapper">
+        <section class="sect1" id="home">
+            <div class="container">
+                <div class="sect1__inner">
+                    <div class="sect1__content">
+                        <h1 class="sect1__title">All-In-One Office Solution<br class="home__dr">For Your Team</h1>
+                        <p class="sect1__descr">Easy Manage Easy Going</p>
+                    </div>
+                    <img class="sect1__img" src="./assets/img/home.png" alt="Photo">
+                    <div class="sect1__blog">
+                        <div class="height">
+                            <span class="height1"></span>
+                            <span class="height2"></span>
+                            <span class="height3"></span>
+                        </div>
+                        <div class="weight">
+                            <span class="square__circle">
+                                <span class="circle"></span>
+                            <span class="square"></span></span>
+                            <div class="weight1">
+                                <span class="weight2"></span>
+                                <span class="weight3"></span>
+                                <span class="weight4"></span>
+                            </div>
+                        </div>
+                        <div class="square__top">
+                            <span class="top"></span>
+                        </div>
+                        <div class="square__center">
+                            <span class="center"></span>
+                        </div>
+                        <div class="square__bottom">
+                            <span class="bottom"></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="sect2">
+            <div class="container">
+                <div class="sect2__inner">
+                    <div class="sect2__brief">
+                        <div class="brief">
+                            <img class="brief__top" src="./assets/img/brief__top.png" alt="Photo">
+                            <img class="brief__bottom" src="./assets/img/brief__bottom.png" alt="Photo">
+                        </div>
+                        <p class="brief__text">Fit Any Size Business</p>
+                    </div>
+                    <div class="sect2__idea">
+                        <div class="idea">
+                            <img class="idea__img" src="./assets/img/idea.png" alt="Photo">
+                        </div>
+                        <p class="idea__text">Just in Time Collaboration</p>
+                    </div>
+                    <div class="sect2__laptop">
+                        <div class="laptop">
+                            <img class="laptop__img" src="./assets/img/laptop.png" alt="Photo">
+                        </div>
+                        <p class="laptop__text">Run in Any Platform</p>
+                    </div>
+                    <div class="sect2__cloud">
+                        <div class="cloud">
+                            <img class="cloud__img" src="./assets/img/cloud.png" alt="Photo">
+                        </div>
+                        <p class="cloud__text">Provide Cloud Technology</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="sect3" id="products">
+            <div class="container">
+                <h1 class="sect3__title">Our Products</h1>
+                <div class="sect3__inner">
+                    <div class="jsslide active">
+                        <div class="sect3__card">
+                            <div class="sect3__content">
+                                <h2 class="sect3__title1">Incubate<span class="title__span1">HR-1</span></h2>
+                                <p class="sect3__descr">IncubateHR is&nbsp;an&nbsp;application for&nbsp;HR that exclusive to&nbsp;organize your employee needs and anything in&nbsp;your hand with easy access by&nbsp;Mobile and Website</p>
+                            </div>
+                            <div class="sect3__item">
+                                <div class="sect3__pic">
+                                    <img class="sect3__img" src="./assets/img/products1.png" alt="Photo">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="jsslide">
+                        <div class="sect3__card">
+                            <div class="sect3__content">
+                                <h2 class="sect3__title1">Incubate<span class="title__span1">HR-2</span></h2>
+                                <p class="sect3__descr">Incubate HR&nbsp;is&nbsp;an&nbsp;application for HR&nbsp;A&nbsp;significant advantage of&nbsp;building web applications to&nbsp;support standard browser functionality IncubateHR-2
+                                </p>
+                            </div>
+                            <div class="sect3__item">
+                                <div class="sect3__pic">
+                                    <img class="sect3__img" src="./assets/img/products2.jpg" alt="Photo">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="prev__next">
+                        <svg id="btn__prev">
+                        <use xlink:href="#prev "></use>
+                    </svg>
+                        <svg id="btn__next">
+                        <use xlink:href="#next "></use>
+                    </svg>
+                    </div>
+                    <div class="dots__dot">
+                        <span class="dot active"></span>
+                        <span class="dot"></span>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="sect4" id="pricing">
+            <div class="container">
+                <h1 class="sect4__title">Pricing</h1>
+                <div class="swiper-container">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide sect4__slider">
+                            <div class="sect4__column">
+                                <div class="sect4__content">
+                                    <h2 class="sect4__title">Rookie</h2>
+                                    <div class="sect4__price">
+                                        <span class="sect4__current">$</span>
+                                        <span class="sect4__current">35/</span>
+                                        <span class="sect4__current1">mo</span>
+                                    </div>
+                                    <p class="sect4__descr1">5&nbsp;User Access</p>
+                                    <p class="sect4__descr2">10&nbsp;GB Allocation Memory</p>
+                                    <p class="sect4__descr3">HR, CRM, Sales Modules</p>
+                                    <p class="sect4__descr4">Any Platform Access</p>
+                                    <a href="#IncubateX"><button class="sect4__btn" type="button">Choose Plan</button></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide sect4__slider">
+                            <div class="sect4__column">
+                                <div class="sect4__content">
+                                    <h2 class="sect4__title">Rockstar</h2>
+                                    <div class="sect4__price">
+                                        <span class="sect4__current">$</span>
+                                        <span class="sect4__current">55/</span>
+                                        <span class="sect4__current1">mo</span>
+                                    </div>
+                                    <p class="sect4__descr1">Unlimited User Access</p>
+                                    <p class="sect4__descr2">50&nbsp;GB Allocation Memory</p>
+                                    <p class="sect4__descr3">All Modules</p>
+                                    <p class="sect4__descr4">Any Platform Access</p>
+                                    <a href="#IncubateX"><button class="sect4__btn" type="button">Choose Plan</button></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide sect4__slider">
+                            <div class="sect4__column">
+                                <div class="sect4__content">
+                                    <h2 class="sect4__title">Premium</h2>
+                                    <div class="sect4__price">
+                                        <span class="sect4__current">$</span>
+                                        <span class="sect4__current">95/</span>
+                                        <span class="sect4__current1">mo</span>
+                                    </div>
+                                    <p class="sect4__descr1">Unlimited User Access</p>
+                                    <p class="sect4__descr2">100&nbsp;GB Allocation Memory</p>
+                                    <p class="sect4__descr3">All Modules</p>
+                                    <p class="sect4__descr4">Any Platform Access</p>
+                                    <a href="#IncubateX"><button class="sect4__btn" type="button">Choose Plan</button></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-pagination"></div>
+                </div>
+            </div>
+        </section>
+        <section class="sect5" id="docs">
+            <div class="container">
+                <h1 class="sect5__title">Trusted&nbsp;By</h1>
+                <div class="sect5__inner">
+                    <div class="sect5__icon">
+                        <img class="sect5__img1" src="./assets/img/boeing.png" alt="">
+                        <img class="sect5__img2" src="./assets/img/adidas.png" alt="">
+                        <img class="sect5__img3" src="./assets/img/dhl.png" alt="">
+                        <img class="sect5__img4" src="./assets/img/ibm.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="sect6">
+            <div class="sect6__top">
+                <svg id="sect6__btn"><use xlink:href="#top__top"></use></svg>
+            </div>
+        </section>
+        <footer class="footer" id="contact">
+            <div class="container">
+                <a href="#IncubateX">
+                    <h1 class="footer__title">Contact&nbsp;us</h1>
+                </a>
+                <div class="footer__inner">
+                    <div class="footer__contacts">
+                        <div class="footer__value">
+                            <img class="value__icon" src="./assets/img/tel.png" alt="Icon">
+                            <a class="value" href="tel:+6345265365">+6345265365</a>
+                        </div>
+                        <div class="footer__mail">
+                            <img class="mail__icon" src="./assets/img/mail.png" alt="Icon">
+                            <a class="mail" href="mailto:hello@incubatex.com">Hello@incubatex.com</a>
+                        </div>
+                        <div class="footer__address">
+                            <img class="address__icon" src="./assets/img/gps.png" alt="Icon">
+                            <address class="address">Santa Barbara, CA</address>
+                        </div>
+                    </div>
+                    <div class="footer__content">
+                        <h1 class="footer__title__text">Keep In&nbsp;Touch</h1>
+                        <p class="footer__descr">Join our Newsletter and you will get latest update from our product</p>
+                        <form class="form__contacts" novalidate="novalidate">
+                            <input class="form__email" type="email" placeholder="Email Address">
+                            <a href="#IncubateX"><button class="email__btn" type="button">Submit</button></a>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+    <script src="./assets/js/swiper.min.js"></script>
+    <script src="./assets/js/slider.swiper.js"></script>
+    <script src="./assets/js/app.js"></script>
+</body>
+
+</html>
